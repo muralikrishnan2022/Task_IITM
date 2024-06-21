@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Your Item</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="color:black; font-size: 40px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Sell Your Item</h1>
+        <form>
+            <div class="form-group">
+                <label for="photos"> Photo of the item:</label>
+                <input type="file" id="photos" name="photos" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="brand">Brand:</label>
+                <input type="text" id="brand" name="brand" required>
+            </div>
+            <div class="form-group">
+                <label for="buying-date">When was it bought:</label>
+                <input type="date" id="buying-date" name="buying-date" required>
+            </div>
+            <div class="form-group">
+                <label for="buying-price">Price:</label>
+                <input type="number" id="buying-price" name="buying-price" required>
+            </div>
+            <div class="form-group">
+                <label for="Sname"> Seller's Name:</label>
+                <input type="text" id="Sname" name="Sname" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Contact Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+            </div>
+            <div class="form-group">
+                <label for="location">Seller's Location:</label>
+                <input type="text" id="location" name="location" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
