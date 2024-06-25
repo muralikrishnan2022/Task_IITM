@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+background: linear-gradient(135deg, #6dd96d, #72e4b8);
+    /* Light gray background */
+    color: #333;
+    /* Dark text color */
+}
+
+h1 {
+    text-align: center;
+    color: #120506;
+    /* Red heading color */
+    margin-bottom: 20px;
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #8b4513;
+    /* Brown button color */
+    color: #fff;
+    /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #6f3a0b;
+    /* Darker brown on hover */
+    transform: translateY(-2px);
+}
+
+#course-inputs {
+    margin-top: 20px;
+    background-color: #fff;
+    /* White background for course inputs */
+    padding: 20px;
+    border: 1px solid #ccc;
+    /* Light border */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Shadow for depth */
+}
+
+.course {
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+select {
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid #ccc;
+    /* Light border for inputs */
+    border-radius: 5px;
+}
+
+#cgpa-result {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2em;
+    color: #023f20;
+    /* Red color for result */
+}
