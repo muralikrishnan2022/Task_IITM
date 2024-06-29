@@ -1,0 +1,41 @@
+# Create a new product
+POST http://localhost:3000/products/
+Content-Type: application/json
+
+{
+    "name": "Laptop",
+    "description": "Powerful laptop with high-performance specs.",
+    "price": 1500,
+    "category": "Electronics",
+    "images": ["https://up.yimg.com/ib/th?id=OIP.okPHK-lOk_E5nzOZsGx2dwHaFI&pid=Api&rs=1&c=1&qlt=95&w=173&h=119", "https://up.yimg.com/ib/th?id=OIP.ed-29-ckMum--DpdlJRKHgHaFW&pid=Api&rs=1&c=1&qlt=95&w=166&h=119"]
+}
+
+###
+
+# Get all products
+GET http://localhost:3000/products/
+
+###
+
+# Get a specific product by ID
+GET http://localhost:3000/products/{{productId}}
+
+###
+
+# Update a product by ID
+PUT http://localhost:3000/products/{{productId}}
+Content-Type: application/json
+
+{
+    "name": "Updated Laptop",
+    "description": "Updated laptop description.",
+    "price": 1600,
+    "category": "Updated Electronics",
+    "images": ["https://up.yimg.com/ib/th?id=OIP.okPHK-lOk_E5nzOZsGx2dwHaFI&pid=Api&rs=1&c=1&qlt=95&w=173&h=119", "https://up.yimg.com/ib/th?id=OIP.ed-29-ckMum--DpdlJRKHgHaFW&pid=Api&rs=1&c=1&qlt=95&w=166&h=119"]
+}
+
+###
+
+# Delete a product by ID
+DELETE http://localhost:3000/products/{{productId}}
+
